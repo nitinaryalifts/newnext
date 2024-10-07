@@ -1,0 +1,422 @@
+[
+  {
+    "id": 1,
+    "name": "R' Duvi Bensoussan",
+    "availableDoses": 7,
+    "avatarUrl": "/R' Duvi Bensoussan.jpg"
+  },
+  {
+    "id": 2,
+    "name": "R' Paysach Krohn",
+    "availableDoses": 4,
+    "avatarUrl": "/R' Paysach Krohn.jpg"
+  },
+  {
+    "id": 3,
+    "name": "R' Yaakov Mizrahi",
+    "availableDoses": 9,
+    "avatarUrl": "/R' Yaakov Mizrahi.jpg"
+  },
+  {
+    "id": 4,
+    "name": "R' Zecharia Wallerstein ZTL",
+    "availableDoses": 7,
+    "avatarUrl": "/R' Zecharia Wallerstein ZTL.png"
+  },
+  {
+    "id": 5,
+    "name": "R' Ephraim Shapiro",
+    "availableDoses": 9,
+    "avatarUrl": "/R' Ephraim Shapiro.jpg"
+  },
+  {
+    "id": 6,
+    "name": "R' Yaakov Rahimi",
+    "availableDoses": 6,
+    "avatarUrl": "/Yaakov Rahimi.jpg"
+  },
+  {
+    "id": 7,
+    "name": "R' YY Jacobson",
+    "availableDoses": 6,
+    "avatarUrl": "/R' YY Jacobson.jpg"
+  },
+  {
+    "id": 8,
+    "name": "R' Joey Haber",
+    "availableDoses": 6,
+    "avatarUrl": "/R' Joey Haber.jpg"
+  },
+  {
+    "id": 9,
+    "name": "R' Yosef Palacci",
+    "availableDoses": 8,
+    "avatarUrl": "/R' Yosef Palacci.jpg"
+  },
+  {
+    "id": 10,
+    "name": "R' Ari Bensoussan",
+    "availableDoses": 7,
+    "avatarUrl": "/Ari Bensoussan.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Mr. Charlie Harary",
+    "availableDoses": 3,
+    "avatarUrl": "/Mr. Charlie Harary.png"
+  },
+  {
+    "id": 12,
+    "name": "R' Avi Wiesenfel",
+    "availableDoses": 6,
+    "avatarUrl": "/R' Avi Wiesenfel.jpg"
+  },
+  {
+    "id": 13,
+    "name": "R' David Ashear",
+    "availableDoses": 5,
+    "avatarUrl": "/R' David Ashear.jpg"
+  },
+  {
+    "id": 14,
+    "name": "R' Yossi Bensoussan",
+    "availableDoses": 5,
+    "avatarUrl": "/R' Yossi Bensoussan.jpg"
+  },
+  {
+    "id": 15,
+    "name": "R' Ari Neuwirth",
+    "availableDoses": 5,
+    "avatarUrl": "/Ari Neuwirth.jpg"
+  },
+  {
+    "id": 16,
+    "name": "R' Benzion Klatzko",
+    "availableDoses": 4,
+    "avatarUrl": "/R' Benzion Klatzko.jpg"
+  },
+  {
+    "id": 17,
+    "name": "R' Binyomin Pruzansky",
+    "availableDoses": 6,
+    "avatarUrl": "/R' Binyomin Pruzansky.jpg"
+  },
+  {
+    "id": 18,
+    "name": "R' David Ozeri",
+    "availableDoses": 5,
+    "avatarUrl": "R' David Ozeri.jpg"
+  },
+  {
+    "id": 19,
+    "name": "R' Eliyahu Maksumov",
+    "availableDoses": 5,
+    "avatarUrl": "/R' Eliyahu Maksumov.png"
+  },
+  {
+    "id": 20,
+    "name": "R' Gavriel Friedman",
+    "availableDoses": 4,
+    "avatarUrl": "/R' Gavriel Friedman.jpg"
+  },
+  {
+    "id": 21,
+    "name": "R' Meir Simcha Sperling",
+    "availableDoses": 3,
+    "avatarUrl": "/R' Meir Simcha Sperling.png"
+  },
+  {
+    "id": 22,
+    "name": "R' Shlomo Farhi",
+    "availableDoses": 4,
+    "avatarUrl": "/R' Shlomo Farhi.jpg"
+  },
+  {
+    "id": 23,
+    "name": "R' Tzvi Sytner",
+    "availableDoses": 4,
+    "avatarUrl": "/R' Tzvi Sytner.png"
+  },
+  {
+    "id": 24,
+    "name": "R' Uri Lati",
+    "availableDoses": 5,
+    "avatarUrl": "/R' Uri Lati.png"
+  },
+  {
+    "id": 25,
+    "name": "R' Yehoshua Zitron",
+    "availableDoses": 5,
+    "avatarUrl": "/R' Yehoshua Zitron.jpg"
+  },
+  {
+    "id": 26,
+    "name": "Dr. Dovid Lieberman",
+    "availableDoses": 3,
+    "avatarUrl": "/Dr. Dovid Lieberman.jpg"
+  },
+  {
+    "id": 27,
+    "name": "R' Avrohom Stulberger",
+    "availableDoses": 0,
+    "avatarUrl": "/R' Avrohom Stulberger.png"
+  },
+  {
+    "id": 28,
+    "name": "R' Dovid Goldwasser",
+    "availableDoses": 3,
+    "avatarUrl": "/R' Dovid Goldwasser.png"
+  },
+  {
+    "id": 29,
+    "name": "R' Meyer Yedid",
+    "availableDoses": 4,
+    "avatarUrl": "/R' Meyer Yedid.jpg"
+  },
+  {
+    "id": 30,
+    "name": "R' Mordechai Kalatsky",
+    "availableDoses": 3,
+    "avatarUrl": "/R' Mordechai Kalatsky.jpg"
+  },
+  {
+    "id": 31,
+    "name": "R' Yoel Gold",
+    "availableDoses": 4,
+    "avatarUrl": "/R' Yoel Gold.jpg"
+  },
+  {
+    "id": 32,
+    "name": "R' Bentzion Shafier",
+    "availableDoses": 3,
+    "avatarUrl": "/R' Bentzion Shafier.jpg"
+  },
+  {
+    "id": 33,
+    "name": "R' David Nakash",
+    "availableDoses": 3,
+    "avatarUrl": "/R' David Nakash.jpg"
+  },
+  {
+    "id": 34,
+    "name": "R' Ilan Meirov",
+    "availableDoses": 3,
+    "avatarUrl": "/R' Ilan Meirov.png"
+  },
+  {
+    "id": 35,
+    "name": "R' Jonathan Rietti",
+    "availableDoses": 3,
+    "avatarUrl": "/R' Jonathan Rietti.jpg"
+  },
+  {
+    "id": 36,
+    "name": "R' Pinchas Landis",
+    "availableDoses": 3,
+    "avatarUrl": "/R' Pinchas Landis.jpg"
+  },
+  {
+    "id": 37,
+    "name": "R' Yaakov Harari",
+    "availableDoses": 3,
+    "avatarUrl": "/R' Yaakov Harari.jpg"
+  },
+  {
+    "id": 38,
+    "name": "R' Yechiel Spero",
+    "availableDoses": 3,
+    "avatarUrl": "/R' Yechiel Spero.jpg"
+  },
+  {
+    "id": 39,
+    "name": "R' Yehoshua Sova",
+    "availableDoses": 2,
+    "avatarUrl": "/R' Yehoshua Sova.jpg"
+  },
+  {
+    "id": 40,
+    "name": "R' Shmuel Silber",
+    "availableDoses": 3,
+    "avatarUrl": "/R' Shmuel Silber.jpg"
+  },
+  {
+    "id": 41,
+    "name": "R' Ariel Mizrahi",
+    "availableDoses": 2,
+    "avatarUrl": "/R' Ariel Mizrahi.jpg"
+  },
+  {
+    "id": 42,
+    "name": "R' Asaf Haimoff",
+    "availableDoses": 2,
+    "avatarUrl": "/R' Asaf Haimoff.jpg"
+  },
+  {
+    "id": 43,
+    "name": "R' Avi Slansky",
+    "availableDoses": 2,
+    "avatarUrl": "/R' Avi Slansky.jpg"
+  },
+  {
+    "id": 44,
+    "name": "R' David Kaplan",
+    "availableDoses": 1,
+    "avatarUrl": "/R' David Kaplan.gif"
+  },
+  {
+    "id": 45,
+    "name": "R' David Shelby",
+    "availableDoses": 2,
+    "avatarUrl": "/R' David Shelby.jpg"
+  },
+  {
+    "id": 46,
+    "name": "R' Dovid Orlofsky",
+    "availableDoses": 2,
+    "avatarUrl": "/R' Dovid Orlofsky.jpg"
+  },
+  {
+    "id": 47,
+    "name": "R' Eliezer Zeytouneh",
+    "availableDoses": 1,
+    "avatarUrl": "/R' Eliezer Zeytouneh.png"
+  },
+  {
+    "id": 48,
+    "name": "R' Yaakov Moshe Altman",
+    "availableDoses": 2,
+    "avatarUrl": "/R' Yaakov Moshe Altman.jpg"
+  },
+  {
+    "id": 49,
+    "name": "R' Moshe Malka",
+    "availableDoses": 2,
+    "avatarUrl": "/R' Moshe Malka.jpg"
+  },
+  {
+    "id": 50,
+    "name": "R' Reuven Epstein",
+    "availableDoses": 2,
+    "avatarUrl": "/R' Reuven Epstein.jpg"
+  },
+  {
+    "id": 51,
+    "name": "R' Yitzchok Fingerer",
+    "availableDoses": 2,
+    "avatarUrl": "/R' Yitzchok Fingerer.jpg"
+  },
+  {
+    "id": 52,
+    "name": "R' Avrohom Walkin",
+    "availableDoses": 1,
+    "avatarUrl": "/R' Avrohom Walkin.jpg"
+  },
+  {
+    "id": 53,
+    "name": "R' Boaz Bardea",
+    "availableDoses": 1,
+    "avatarUrl": "/R' Boaz Bardea.jpg"
+  },
+  {
+    "id": 54,
+    "name": "R' Chaim Dahan zt”l",
+    "availableDoses": 1,
+    "avatarUrl": "/R' Chaim Dahan zt”l.jpg"
+  },
+  {
+    "id": 55,
+    "name": "R' Chaim Rosenfeld",
+    "availableDoses": 1,
+    "avatarUrl": "/R' Chaim Rosenfeld.jpg"
+  },
+  {
+    "id": 56,
+    "name": "R' Etiel Goldwich",
+    "availableDoses": 1,
+    "avatarUrl": "/R' Etiel Goldwich.jpg"
+  },
+  {
+    "id": 57,
+    "name": "R' Fischel Schachter",
+    "availableDoses": 1,
+    "avatarUrl": "/R' Fischel Schachter.jpg"
+  },
+  {
+    "id": 58,
+    "name": "R' Label Lam",
+    "availableDoses": 1,
+    "avatarUrl": "/R' Label Lam.jpg"
+  },
+  {
+    "id": 59,
+    "name": "R' Mordechai Kraft",
+    "availableDoses": 0,
+    "avatarUrl": "/R' Mordechai Kraft.png"
+  },
+  {
+    "id": 60,
+    "name": "R' Moshe Meir Weiss",
+    "availableDoses": 1,
+    "avatarUrl": "/R' Moshe Meir Weiss.gif"
+  },
+  {
+    "id": 61,
+    "name": "R' Noach Light",
+    "availableDoses": 0,
+    "avatarUrl": "/R' Noach Light.jpg"
+  },
+  {
+    "id": 62,
+    "name": "R' Yakov Asher Sinclair",
+    "availableDoses": 1,
+    "avatarUrl": "/R' Yakov Asher Sinclair.png"
+  },
+  {
+    "id": 63,
+    "name": "R' Yaniv Meirov",
+    "availableDoses": 1,
+    "avatarUrl": "/R' Yaniv Meirov.jpg"
+  },
+  {
+    "id": 64,
+    "name": "R' Yisroel Majeski",
+    "availableDoses": 0,
+    "avatarUrl": "/R' Yisroel Majeski.jpg"
+  },
+  {
+    "id": 65,
+    "name": "R' Yissachar Frand",
+    "availableDoses": 1,
+    "avatarUrl": "/R' Yissachar Frand.jpg"
+  },
+  {
+    "id": 66,
+    "name": "R' Elazar Meisels",
+    "availableDoses": 2,
+    "avatarUrl": "/R' Elazar Meisels.jpg"
+  },
+  {
+    "id": 67,
+    "name": "R' Leiby Burnham",
+    "availableDoses": 1,
+    "avatarUrl": "/R' Leiby Burnham.jpg"
+  },
+  {
+    "id": 68,
+    "name": "R' Yehoshua Nissan",
+    "availableDoses": 2,
+    "avatarUrl": "/R' Yehoshua Nissan.jpg"
+  },
+  {
+    "id": 69,
+    "name": "R' Aryeh Kerzner",
+    "availableDoses": 2,
+    "avatarUrl": "/R' Aryeh Kerzner.jpg"
+  },
+  {
+    "id": 70,
+    "name": "R' Shlomo Landau",
+    "availableDoses": 1,
+    "avatarUrl": "/R' Shlomo Landau.jpg"
+  }
+]

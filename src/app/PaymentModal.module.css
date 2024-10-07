@@ -1,0 +1,50 @@
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /* Ensures the overlay is above other content */
+  }
+  
+  .modalContent {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 600px;
+    max-width: 100%;
+    z-index: 1001; /* Ensures the content is above the overlay */
+    position: relative; /* Ensures correct stacking context */
+  }
+  
+  
+  .quantityContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .quantityButton {
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 4px;
+  }
+  
+  .quantityButton:hover {
+    background-color: #005bb5;
+  }
+  
+  .quantityDisplay {
+    font-size: 16px;
+    margin: 0 8px;
+  }
