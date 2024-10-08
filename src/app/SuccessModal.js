@@ -12,7 +12,7 @@ const SuccessModal = ({ message, onClose }) => {
         <h1 className='conText pb-2 fw-semibold'>Congratulations!!</h1>
         <p>{message}</p>
         <p className='small px-4 px-sm-5'>Click here to pre-order the book and receive it right when it comes out of print.</p>
-         <Link href="https://newrwbook.myshopify.com/products/daily-dose-book" target={_blank} onClick={onClose} className={`paymenysuccesBtn ${styles.closeButton}`}>Pre-order now</Link>
+         <Link href="https://newrwbook.myshopify.com/products/daily-dose-book" target="_blank" onClick={onClose} className={`paymenysuccesBtn ${styles.closeButton}`}>Pre-order now</Link>
 
           {/* <button onClick={onClose} className={styles.closeButton}>
             Link come here
