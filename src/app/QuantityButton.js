@@ -38,7 +38,7 @@ const QuantityButton = ({
     if (AvailableDocs <= limitAmountClass) {
         setPopupMessage('All doses are sold out');
         setIsPopupVisible(true);
-       console.log('test',isPopupVisible);
+       //console.log('test',isPopupVisible);
         return;
     }
     if (quantity < maxQuantity) {
@@ -55,7 +55,7 @@ const QuantityButton = ({
 
   const decrement = (event) => {
     event.preventDefault();
-    console.log('test decrement');
+    //console.log('test decrement');
     setQuantity((prevQuantity) => {
       const newQuantity = Math.max(prevQuantity - 1, 0); // Prevent going below 0
       onQuantityChange(newQuantity);
