@@ -12,8 +12,8 @@ export async function POST(request) {
             return new Response(JSON.stringify({ message: 'Invalid input' }), { status: 400 });
         }
 
-        console.log('Data path:', dataPath);
-        console.log('Received data:', { sponsorId, quantity });
+        //console.log('Data path:', dataPath);
+        //ngitconsole.log('Received data:', { sponsorId, quantity });
 
         // Read the current sponsors data
         const data = await fs.readFile(dataPath, 'utf8');
