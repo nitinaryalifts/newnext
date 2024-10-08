@@ -62,7 +62,7 @@ const updateDoses = async (sponsorId, quantity) => {
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ sponsorId, quantity }),
         });
-
+        console.log(response);
         // Check if the response was successful
         if (!response.ok) {
             throw new Error(`Error updating doses: ${response.status} ${response.statusText}`);
