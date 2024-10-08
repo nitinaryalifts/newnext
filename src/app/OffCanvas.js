@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useRef, useState } from 'react';
 import Payment from './CheckoutForm'; // Make sure this path is correct
 import { FaCartPlus } from "react-icons/fa";

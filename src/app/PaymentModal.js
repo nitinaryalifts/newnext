@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useState } from 'react';
 import { DoseProvider } from './DoseContext';
 import Payment from './CheckoutForm';
