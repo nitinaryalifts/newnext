@@ -54,40 +54,40 @@ export const DoseProvider = ({ children }) => {
 //     }
 // };
 
+
 const updateDoses = async (sponsorId, quantity) => {
     try {
-        // Make a POST request to update the JSON file
-        const response = await fetch('/api/updateDoses', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ sponsorId, quantity }),
+      // Make a POST request to update the JSON file
+      const response = await fetch('/api/updateDoses', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ sponsorId, quantity }),
+      });
+      console.log(response);
+      // Check if the response was successful
+      if (!response.ok) {
+        throw new Error(`Error updating doses: ${response.status} ${response.statusText}`);
+      }
+  
+      const result = await response.json();
+      console.log('Response:', result);
+  
+      // Update the local state
+      setSponsors((prevSponsors) => {
+        return prevSponsors.map((sponsor) => {
+          if (sponsor.id === sponsorId) {
+            const newAvailableDoses = Math.max(sponsor.availableDoses - quantity, 0);
+            return { ...sponsor, availableDoses: newAvailableDoses };
+          }
+          return sponsor;
         });
-        console.log(response);
-        // Check if the response was successful
-        if (!response.ok) {
-            throw new Error(`Error updating doses: ${response.status} ${response.statusText}`);
-        }
-
-        const result = await response.json();
-        console.log('Response:', result);
-
-        // Update the local state
-        setSponsors((prevSponsors) => {
-            return prevSponsors.map((sponsor) => {
-                if (sponsor.id === sponsorId) {
-                    const newAvailableDoses = Math.max(sponsor.availableDoses - quantity, 0);
-                    return { ...sponsor, availableDoses: newAvailableDoses };
-                }
-                return sponsor;
-            });
-        });
-
-        setLeftDoses((prev) => Math.max(prev - quantity, 0));
+      });
+  
+      setLeftDoses((prev) => Math.max(prev - quantity, 0));
     } catch (error) {
-        console.error('Error updating doses:', error);
+      console.error('Error updating doses:', error);
     }
-};
-	
+  };
 
 
 	 const resetDoses = async () => {

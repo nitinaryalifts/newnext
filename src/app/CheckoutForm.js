@@ -110,8 +110,7 @@ function CheckoutForm({
   const handleSubmit = async (event) => {
     event.preventDefault();
     const dosesAvailable = await checkAvailableDoses();
-    const updateDose = await updateDoses();
-    console.log(updateDose);
+    
     if (!dosesAvailable) {
       return; // Early return if doses are insufficient
     }
@@ -190,6 +189,8 @@ function CheckoutForm({
         "Subscription created successfully! You will recieve an email Where you will be able to add text and give the dedication for each dose."
       );
       setLoading(false);
+      const updateDose = await updateDoses(sponsorId, quantity);
+      console.log(updateDose);
       return;
     }
 
@@ -227,6 +228,8 @@ function CheckoutForm({
       setSuccessMessage(
         "Payment successful! Thank you for your donation.You will recieve an email Where you will be able to add text and give the dedication for each dose."
       );
+      const updateDose = await updateDoses(sponsorId, quantity);
+      console.log(updateDose);
 
       setLoading(false);
       onSuccessPayment();
