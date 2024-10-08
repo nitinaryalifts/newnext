@@ -182,7 +182,7 @@ function CheckoutForm({
     const { clientSecret, subscriptionId } = await response.json();
     // Confirm the payment
     if (paymentType === "monthly") {
-      console.log(subscriptionId);
+     // console.log(subscriptionId);
       onSuccessPayment();
       setSuccessMessage(
         "Subscription created successfully! You will recieve an email Where you will be able to add text and give the dedication for each dose."
@@ -198,7 +198,7 @@ function CheckoutForm({
       });
 
     if (stripeError) {
-      console.log(stripeError);
+     // console.log(stripeError);
       // Handle card decline error
       switch (stripeError.code) {
         case "card_declined":
