@@ -32,7 +32,7 @@ function CheckoutForm({
   cart,
   productName,
 }) { 
-  const { getSponsors } = useDoses();
+  const { getSponsors,updateDoses } = useDoses();
   const stripe = useStripe();
   const elements = useElements();
   const [loading, setLoading] = useState(false);
@@ -110,6 +110,8 @@ function CheckoutForm({
   const handleSubmit = async (event) => {
     event.preventDefault();
     const dosesAvailable = await checkAvailableDoses();
+    const updateDose = await updateDoses();
+    console.log(updateDose);
     if (!dosesAvailable) {
       return; // Early return if doses are insufficient
     }
