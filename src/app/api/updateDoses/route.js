@@ -2,41 +2,42 @@ import fs from 'fs/promises';
 import path from 'path';
 
 const dataPath = path.join(process.cwd(), 'public', 'data', 'sponsors.json');
-
 export async function POST(request) {
     try {
         const { sponsorId, quantity } = await request.json();
-          console.log('Data path:', dataPath); // Log the path
-        // Log incoming request data
+
+        // Validate inputs
+        if (!sponsorId || quantity == null) {
+            console.error('Invalid input:', { sponsorId, quantity });
+            return new Response(JSON.stringify({ message: 'Invalid input' }), { status: 400 });
+        }
+
+        console.log('Data path:', dataPath);
         console.log('Received data:', { sponsorId, quantity });
 
         // Read the current sponsors data
-          const data = await fs.readFile(dataPath, 'utf8');
-			const sponsors = JSON.parse(data);
+        const data = await fs.readFile(dataPath, 'utf8');
+        const sponsors = JSON.parse(data);
 
-		let updatedspons = "";
-       const updatedSponsors = sponsors.map((sponsor) => {
+        let updatedspons = null;
+        const updatedSponsors = sponsors.map((sponsor) => {
             if (sponsor.id == sponsorId) {
                 const newAvailableDoses = Math.max(sponsor.availableDoses - quantity, 0);
-				updatedspons = { ...sponsor, availableDoses: newAvailableDoses };
-                return { ...sponsor, availableDoses: newAvailableDoses };
+                updatedspons = { ...sponsor, availableDoses: newAvailableDoses };
+                return updatedspons;
             }
             return sponsor;
         });
 
         // Write the updated sponsors back to the file
-        await fs.writeFile(dataPath, JSON.stringify(updatedSponsors, null, 2))
-			.catch(err => {
-				console.error('Error writing file:', err); // Log the error
-				throw new Error('Error writing data');
-			}); 
+        await fs.writeFile(dataPath, JSON.stringify(updatedSponsors, null, 2));
 
-        return new Response(JSON.stringify({updatedspons:updatedspons,updatedSponsors:updatedSponsors,quantity:quantity,sponsorId:sponsorId}), {
+        return new Response(JSON.stringify({ updatedspons, updatedSponsors, quantity, sponsorId }), {
             status: 200,
             headers: { 'Content-Type': 'application/json' },
         });
     } catch (err) {
-        console.error('Error occurred:', err); // Log the entire error object
+        console.error('Error occurred:', err);
         return new Response(JSON.stringify({ 
             message: 'Internal Server Error', 
             error: err.message || 'Unknown error'
