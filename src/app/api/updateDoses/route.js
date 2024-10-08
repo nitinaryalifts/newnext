@@ -38,7 +38,7 @@ export async function POST(request) {
     } catch (err) {
         //console.error('Error occurred:', err); // Log the entire error object
         return new Response(JSON.stringify({ 
-            message: 'Internal Server Error', 
+            message: 'Internal Error', 
             error: err.message || 'Unknown error'
         }), {
             status: 500,
