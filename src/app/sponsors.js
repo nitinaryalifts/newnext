@@ -22,7 +22,7 @@ export default function Sponsors({ quantities, setQuantities, setIsOffCanvasVisi
     }
 	
 	  useEffect(() => {
-        console.log('Initial sponsors:', initialSponsors);
+        //console.log('Initial sponsors:', initialSponsors);
         if (initialSponsors.length > 0) {
             setSponsors(shuffleArray([...initialSponsors])); // Shuffle only on mount
         }
@@ -35,7 +35,7 @@ export default function Sponsors({ quantities, setQuantities, setIsOffCanvasVisi
        // console.log('get the value of env',limitAmountClass);
         setPayVisible(false);
         if (AvailableDocs <= limitAmountClass) {
-            console.log(totalLeftDoses);
+            //console.log(totalLeftDoses);
             setPopupMessage('All doses are sold out');
             setIsPopupVisible(true);
              return;
@@ -50,7 +50,7 @@ export default function Sponsors({ quantities, setQuantities, setIsOffCanvasVisi
             }));
             const valuesquant = Object.values(quantities);
             const sum = valuesquant.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-            console.log(sum); 
+            //console.log(sum); 
 
             setCart(prevCart => {
                 const existingSponsor = prevCart.find(item => item.id === sponsorId);
