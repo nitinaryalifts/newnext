@@ -10,10 +10,10 @@ export const DoseProvider = ({ children }) => {
       const [leftDoses, setLeftDoses] = useState(0);
 	
 	 const fetchSponsors = async () => {
-        const response = await fetch('/data/sponsors.json');
+        const response = await fetch('api/sponsors');
         const data = await response.json();
-        setSponsors(data);
-        setLeftDoses(data.reduce((total, sponsor) => total + sponsor.availableDoses, 0));
+        setSponsors(data.sponsors);
+        setLeftDoses(data.sponsors.reduce((total, sponsor) => total + sponsor.availableDoses, 0));
     };
 	
 	 useEffect(() => {
@@ -21,9 +21,9 @@ export const DoseProvider = ({ children }) => {
     }, []);
 	
 	 const getSponsors = async () => {
-        const response = await fetch('/data/sponsors.json');
+        const response = await fetch('api/sponsors');
         const data = await response.json();
-        return data;
+        return data.sponsors;
     };
 
 //      const updateDoses = async (sponsorId, quantity) => {
@@ -58,10 +58,10 @@ export const DoseProvider = ({ children }) => {
 const updateDoses = async (sponsorId, quantity) => {
     try {
       // Make a POST request to update the JSON file
-      const response = await fetch('/api/updateDoses', {
-        method: 'POST',
+      const response = await fetch('/api/sponsors', {
+        method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ sponsorId, quantity }),
+        body: JSON.stringify({ id:sponsorId,quantity  }),
       });
       console.log(response);
       // Check if the response was successful

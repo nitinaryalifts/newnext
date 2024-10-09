@@ -20,7 +20,7 @@
   {
     "id": 4,
     "name": "R' Zecharia Wallerstein ZTL",
-    "availableDoses": 7,
+    "availableDoses": 5,
     "avatarUrl": "/R' Zecharia Wallerstein ZTL.png"
   },
   {
@@ -32,7 +32,7 @@
   {
     "id": 6,
     "name": "R' Yaakov Rahimi",
-    "availableDoses": 6,
+    "availableDoses": 4,
     "avatarUrl": "/Yaakov Rahimi.jpg"
   },
   {
@@ -68,7 +68,7 @@
   {
     "id": 12,
     "name": "R' Avi Wiesenfel",
-    "availableDoses": 5,
+    "availableDoses": 3,
     "avatarUrl": "/R' Avi Wiesenfel.jpg"
   },
   {
@@ -86,13 +86,13 @@
   {
     "id": 15,
     "name": "R' Ari Neuwirth",
-    "availableDoses": 5,
+    "availableDoses": 3,
     "avatarUrl": "/Ari Neuwirth.jpg"
   },
   {
     "id": 16,
     "name": "R' Benzion Klatzko",
-    "availableDoses": 4,
+    "availableDoses": 2,
     "avatarUrl": "/R' Benzion Klatzko.jpg"
   },
   {
@@ -122,19 +122,19 @@
   {
     "id": 21,
     "name": "R' Meir Simcha Sperling",
-    "availableDoses": 3,
+    "availableDoses": 1,
     "avatarUrl": "/R' Meir Simcha Sperling.png"
   },
   {
     "id": 22,
     "name": "R' Shlomo Farhi",
-    "availableDoses": 4,
+    "availableDoses": 2,
     "avatarUrl": "/R' Shlomo Farhi.jpg"
   },
   {
     "id": 23,
     "name": "R' Tzvi Sytner",
-    "availableDoses": 4,
+    "availableDoses": 2,
     "avatarUrl": "/R' Tzvi Sytner.png"
   },
   {
@@ -194,7 +194,7 @@
   {
     "id": 33,
     "name": "R' David Nakash",
-    "availableDoses": 3,
+    "availableDoses": 1,
     "avatarUrl": "/R' David Nakash.jpg"
   },
   {
@@ -206,7 +206,7 @@
   {
     "id": 35,
     "name": "R' Jonathan Rietti",
-    "availableDoses": 3,
+    "availableDoses": 1,
     "avatarUrl": "/R' Jonathan Rietti.jpg"
   },
   {

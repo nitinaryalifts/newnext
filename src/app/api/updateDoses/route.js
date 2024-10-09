@@ -3,6 +3,8 @@ import path from 'path';
 
 const dataPath = path.join(process.cwd(), 'public', 'data', 'sponsors.json');
 
+console.log({dataPath})
+
 export async function POST(request) {
     try {
         const { sponsorId, quantity } = await request.json();
@@ -23,6 +25,14 @@ export async function POST(request) {
             }
             return sponsor;
         });
+        updatedSponsors.push({
+            "id": 0,
+            "name": "Sameet",
+            "availableDoses": 5,
+            "avatarUrl": "/R' Duvi Bensoussan.jpg"
+          })
+
+          
 
         // Write the updated sponsors back to the file
         await fs.writeFile(dataPath, JSON.stringify(updatedSponsors, null, 2))
