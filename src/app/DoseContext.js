@@ -28,16 +28,17 @@ export const DoseProvider = ({ children }) => {
 
 
 
+
+
 const updateDoses = async (sponsorId, quantity) => {
     try {
       // Make a POST request to update the JSON file
-      const newQuant = quantity+1;
       const response = await fetch('/api/sponsors', {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ id:sponsorId,newQuant  }),
+        body: JSON.stringify({ id:sponsorId,quantity  }),
       });
-      //console.log(response);
+      console.log(response);
       // Check if the response was successful
       if (!response.ok) {
         throw new Error(`Error updating doses: ${response.status} ${response.statusText}`);
