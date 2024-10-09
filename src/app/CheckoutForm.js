@@ -32,7 +32,7 @@ function CheckoutForm({
   cart,
   productName,
 }) { 
-  const { getSponsors,updateDoses } = useDoses();
+  const { getSponsors } = useDoses();
   const stripe = useStripe();
   const elements = useElements();
   const [loading, setLoading] = useState(false);
@@ -191,8 +191,6 @@ function CheckoutForm({
         "Subscription created successfully! You will recieve an email Where you will be able to add text and give the dedication for each dose."
       );
       setLoading(false);
-      const updateDose = await updateDoses(sponsorId, quantity);
-      console.log(updateDose);
       return;
     }
 
@@ -230,9 +228,6 @@ function CheckoutForm({
       setSuccessMessage(
         "Payment successful! Thank you for your donation.You will recieve an email Where you will be able to add text and give the dedication for each dose."
       );
-      const updateDose = await updateDoses(sponsorId , quantity);
-      console.log(updateDose);
-
       setLoading(false);
       onSuccessPayment();
     }

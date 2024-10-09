@@ -5,7 +5,7 @@ import QuantityButton from './QuantityButton';
 import SoldOutModal from './SoldOutModal'; 
 const limitAmountClass = parseInt(process.env.NEXT_PUBLIC_APP_LIMIT_AMOUNT_CLASS, 10);
 export default function Sponsors({ quantities, setQuantities, setIsOffCanvasVisible, cart, setCart, isInitialAddition, setIsInitialAddition ,setPayVisible}) {
-    const { sponsors: initialSponsors, updateDoses, getTotalLeftDoses } = useDoses();
+    const { sponsors: initialSponsors, getTotalLeftDoses } = useDoses();
     const [sponsors, setSponsors] = useState([]);
     const [popupMessage, setPopupMessage] = useState('');
     const [isPopupVisible, setIsPopupVisible] = useState(false);

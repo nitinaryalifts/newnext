@@ -110,6 +110,7 @@ export async function PUT(req) {
   try {
     const { id, name, availableDoses, avatarUrl, quantity } = await req.json();
 
+    // Ensure all required fields are provided
    
 
     // Construct SQL query dynamically based on provided fields

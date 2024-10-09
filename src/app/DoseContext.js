@@ -26,44 +26,18 @@ export const DoseProvider = ({ children }) => {
         return data.sponsors;
     };
 
-//      const updateDoses = async (sponsorId, quantity) => {
-// 		setSponsors((prevSponsors) => {
-// 			return prevSponsors.map((sponsor) => {
-// 				if (sponsor.id === sponsorId) {
-// 					const newAvailableDoses = Math.max(sponsor.availableDoses - quantity, 0);
-// 					return { ...sponsor, availableDoses: newAvailableDoses };
-// 				}
-// 				return sponsor;
-// 			});
-// 		});
-
-//     setLeftDoses((prev) => Math.max(prev - quantity, 0));
-
-//     // Make a POST request to update the JSON file
-//     try {
-		
-// 		    const response = await fetch('/api/updateDoses', {
-// 				  method: 'POST',
-// 				  headers: { 'Content-Type': 'application/json' },
-// 				  body: JSON.stringify({ sponsorId, quantity }),
-// 				});
-// 		 const result = await response.json();
-// 			console.log('Response:', result);
-//     } catch (error) {
-//         console.error('Error updating doses:', error);
-//     }
-// };
 
 
 const updateDoses = async (sponsorId, quantity) => {
     try {
       // Make a POST request to update the JSON file
+      const newQuant = quantity+1;
       const response = await fetch('/api/sponsors', {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ id:sponsorId,quantity  }),
+        body: JSON.stringify({ id:sponsorId,newQuant  }),
       });
-      console.log(response);
+      //console.log(response);
       // Check if the response was successful
       if (!response.ok) {
         throw new Error(`Error updating doses: ${response.status} ${response.statusText}`);

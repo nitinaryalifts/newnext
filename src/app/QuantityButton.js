@@ -13,7 +13,7 @@ const QuantityButton = ({
   setIsInitialAddition,
   cart
 }) => {
-  const { updateDoses,getTotalLeftDoses } = useDoses();
+  const {getTotalLeftDoses } = useDoses();
   const [quantity, setQuantity] = useState(initialQuantity);
   const [initialAddition, setInitialAddition] = useState(isInitialAddition);
   const [isPopupVisible, setIsPopupVisible] = useState(false);
@@ -45,9 +45,6 @@ const QuantityButton = ({
       setQuantity((prevQuantity) => {
         const newQuantity = prevQuantity + 1;
         onQuantityChange(newQuantity);
-        if (updateDoses) {
-                    updateDoses(sponsorId, newQuantity); // Call updateDoses appropriately
-                }
         return newQuantity;
       });
     }
@@ -59,9 +56,6 @@ const QuantityButton = ({
     setQuantity((prevQuantity) => {
       const newQuantity = Math.max(prevQuantity - 1, 0); // Prevent going below 0
       onQuantityChange(newQuantity);
-       if (updateDoses) {
-			updateDoses(sponsorId, newQuantity); // Call updateDoses appropriately
-		} 
       return newQuantity;
     });
   };
